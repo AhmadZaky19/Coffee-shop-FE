@@ -1,0 +1,75 @@
+.footer {
+  background-color: #f8f8f8;
+  padding: 60px 100px;
+}
+
+.brand__logo--footer {
+  height: 34px;
+  width: 30px;
+}
+
+.brand {
+  padding-left: 20px;
+}
+
+.brand__name {
+  font-weight: bold;
+  font-size: 20px;
+  color: #0b132a;
+  padding-left: 20px;
+}
+
+.brand__desc {
+  color: #4f5665;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 20px;
+}
+
+.section__title {
+  color: #0b132a;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.footer__text--desktop {
+  padding-left: 20px;
+  color: #afb5c0;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.footer__text--mobile {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 60px 30px;
+  }
+
+  .footer__text--desktop {
+    display: none;
+  }
+
+  .section {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  .section__menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer__text--mobile {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    padding-top: 40px;
+    color: #afb5c0;
+  }
+}
