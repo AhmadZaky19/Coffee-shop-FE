@@ -1,0 +1,34 @@
+.brand__logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0b132a !important;
+  padding-left: 20px;
+}
+
+.menu:focus {
+  color: #6a4029 !important;
+  font-weight: 700;
+}
+
+.icon__right {
+  width: 60px;
+}
+
+.user__image {
+  width: 60px;
+  border-radius: 50%;
+}
+
+@media (max-width: 480px) {
+  .icon__right {
+    padding-top: 10px;
+    margin-left: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .user__image {
+    padding-top: 10px;
+    margin-left: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
