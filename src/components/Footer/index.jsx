@@ -11,7 +11,7 @@ import "./index.css";
 const Footer = () => {
   return (
     <>
-      <Row className="footer">
+      <Row className="footer gx-0">
         <Col sm={12} md={8} lg={8}>
           <div className="d-flex brand">
             <img src={Logo} alt="" className="brand__logo--footer" />
