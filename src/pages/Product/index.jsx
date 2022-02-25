@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import Image from "react-bootstrap/Image";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
@@ -10,7 +11,7 @@ import PromoPic from "../../assets/img/spaghetti.png";
 import Arrow from "../../assets/icons/arrow.png";
 
 const Product = () => {
-  const [active, setActive] = useState("");
+  const navigate = useNavigate();
 
   const formatRp = (number) => {
     return new Intl.NumberFormat("id-ID", {
@@ -18,6 +19,10 @@ const Product = () => {
       style: "currency",
       currency: "IDR",
     }).format(number);
+  };
+
+  const toCart = () => {
+    navigate("/cart");
   };
 
   useEffect(() => {
@@ -96,7 +101,9 @@ const Product = () => {
                 <div className="size__option--button">XL</div>
               </div>
             </div>
-            <Button className="button__cart mx-5 my-3">Add to Cart</Button>
+            <Button className="button__cart mx-5 my-3" onClick={toCart}>
+              Add to Cart
+            </Button>
             <Button className="button__staff mx-5 my-2">Ask a Staff</Button>
           </Col>
         </Row>
@@ -151,7 +158,6 @@ const Product = () => {
           </Col>
         </Row>
       </Container>
-
       <Footer />
     </>
   );

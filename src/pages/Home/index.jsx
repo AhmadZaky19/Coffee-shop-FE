@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { Row, Col, Card, Button } from "react-bootstrap";
+import React, { useEffect } from "react";
+import { Row, Col, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import Image from "react-bootstrap/Image";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
@@ -9,7 +10,7 @@ import "./index.css";
 import PromoPic from "../../assets/img/spaghetti.png";
 
 const Home = () => {
-  const [active, setActive] = useState("");
+  const navigate = useNavigate();
 
   const formatRp = (number) => {
     return new Intl.NumberFormat("id-ID", {
@@ -19,9 +20,14 @@ const Home = () => {
     }).format(number);
   };
 
+  const toProductDetail = () => {
+    navigate("/product-detail/");
+  };
+
   useEffect(() => {
     document.title = "Coffee Shop";
   }, []);
+
   return (
     <>
       <Navbar />
@@ -92,84 +98,84 @@ const Home = () => {
                 flex-wrap
               "
           >
-            <div className="card-list-menu-item my-4">
+            <div className="card-list-menu-item my-4" onClick={toProductDetail}>
               <div>
                 <img src={PromoPic} className="menu-item-img" alt="" />
                 <div className="menu-item-name mt-2">Spaghetti</div>
                 <div className="menu-item-price">{formatRp(10000)}</div>
               </div>
             </div>
-            <div className="card-list-menu-item my-4">
+            <div className="card-list-menu-item my-4" onClick={toProductDetail}>
               <div>
                 <img src={PromoPic} className="menu-item-img" alt="" />
                 <div className="menu-item-name mt-2">Spaghetti</div>
                 <div className="menu-item-price">{formatRp(10000)}</div>
               </div>
             </div>
-            <div className="card-list-menu-item my-4">
+            <div className="card-list-menu-item my-4" onClick={toProductDetail}>
               <div>
                 <img src={PromoPic} className="menu-item-img" alt="" />
                 <div className="menu-item-name mt-2">Spaghetti</div>
                 <div className="menu-item-price">{formatRp(10000)}</div>
               </div>
             </div>
-            <div className="card-list-menu-item my-4">
+            <div className="card-list-menu-item my-4" onClick={toProductDetail}>
               <div>
                 <img src={PromoPic} className="menu-item-img" alt="" />
                 <div className="menu-item-name mt-2">Spaghetti</div>
                 <div className="menu-item-price">{formatRp(10000)}</div>
               </div>
             </div>
-            <div className="card-list-menu-item my-4">
+            <div className="card-list-menu-item my-4" onClick={toProductDetail}>
               <div>
                 <img src={PromoPic} className="menu-item-img" alt="" />
                 <div className="menu-item-name mt-2">Spaghetti</div>
                 <div className="menu-item-price">{formatRp(10000)}</div>
               </div>
             </div>
-            <div className="card-list-menu-item my-4">
+            <div className="card-list-menu-item my-4" onClick={toProductDetail}>
               <div>
                 <img src={PromoPic} className="menu-item-img" alt="" />
                 <div className="menu-item-name mt-2">Spaghetti</div>
                 <div className="menu-item-price">{formatRp(10000)}</div>
               </div>
             </div>
-            <div className="card-list-menu-item my-4">
+            <div className="card-list-menu-item my-4" onClick={toProductDetail}>
               <div>
                 <img src={PromoPic} className="menu-item-img" alt="" />
                 <div className="menu-item-name mt-2">Spaghetti</div>
                 <div className="menu-item-price">{formatRp(10000)}</div>
               </div>
             </div>
-            <div className="card-list-menu-item my-4">
+            <div className="card-list-menu-item my-4" onClick={toProductDetail}>
               <div>
                 <img src={PromoPic} className="menu-item-img" alt="" />
                 <div className="menu-item-name mt-2">Spaghetti</div>
                 <div className="menu-item-price">{formatRp(10000)}</div>
               </div>
             </div>
-            <div className="card-list-menu-item my-4">
+            <div className="card-list-menu-item my-4" onClick={toProductDetail}>
               <div>
                 <img src={PromoPic} className="menu-item-img" alt="" />
                 <div className="menu-item-name mt-2">Spaghetti</div>
                 <div className="menu-item-price">{formatRp(10000)}</div>
               </div>
             </div>
-            <div className="card-list-menu-item my-4">
+            <div className="card-list-menu-item my-4" onClick={toProductDetail}>
               <div>
                 <img src={PromoPic} className="menu-item-img" alt="" />
                 <div className="menu-item-name mt-2">Spaghetti</div>
                 <div className="menu-item-price">{formatRp(10000)}</div>
               </div>
             </div>
-            <div className="card-list-menu-item my-4">
+            <div className="card-list-menu-item my-4" onClick={toProductDetail}>
               <div>
                 <img src={PromoPic} className="menu-item-img" alt="" />
                 <div className="menu-item-name mt-2">Spaghetti</div>
                 <div className="menu-item-price">{formatRp(10000)}</div>
               </div>
             </div>
-            <div className="card-list-menu-item my-4">
+            <div className="card-list-menu-item my-4" onClick={toProductDetail}>
               <div>
                 <img src={PromoPic} className="menu-item-img" alt="" />
                 <div className="menu-item-name mt-2">Spaghetti</div>
