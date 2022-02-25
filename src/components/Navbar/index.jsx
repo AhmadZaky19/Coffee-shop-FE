@@ -25,10 +25,10 @@ const Navigation = () => {
             <Nav.Link href="#home" className="menu px-4">
               Home
             </Nav.Link>
-            <Nav.Link href="#link" className="menu px-4">
+            <Nav.Link href="/" className="menu px-4">
               Product
             </Nav.Link>
-            <Nav.Link href="#link" className="menu px-4">
+            <Nav.Link href="/cart" className="menu px-4">
               Your Cart
             </Nav.Link>
             <Nav.Link href="#link" className="menu px-4">
