@@ -1,0 +1,243 @@
+.cart__content {
+  align-items: center;
+  background-image: url("../../assets/img/background.png");
+  background-size: cover;
+}
+
+.left__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #ffffff;
+  margin: 40px 120px;
+}
+
+.cart__content--left {
+  background-color: #ffffff;
+  margin: 20px 120px 150px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.35);
+  padding: 60px 50px;
+}
+
+.cart__content--left--title {
+  color: #362115;
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.order__img {
+  width: 70px;
+  border-radius: 10px;
+}
+
+.order__summary {
+  line-height: 8px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.order__summary--price {
+  font-size: 20px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.order__line {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  border-top: 2px solid #dedede;
+}
+
+.order__summary--price--cart {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.order__summary--price--cart--part {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order__summary--price--cart--desc {
+  color: #362115;
+  font-size: 20px;
+}
+
+.order__summary--price--cart--total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order__summary--price--cart--desc1 {
+  color: #362115;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.right__title {
+  display: flex;
+  justify-content: space-between;
+  margin: 1px 120px;
+}
+
+.right__title--1 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.right__title--2 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.order__line--2 {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 2px solid #dedede;
+  margin-bottom: 20px;
+}
+
+.cart__content--right {
+  background-color: #ffffff;
+  margin: 1px 120px 30px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.35);
+  padding: 20px 30px;
+}
+
+.cart__content--address {
+  font-size: 20px;
+}
+
+.form__check {
+  display: flex;
+}
+
+.card__item {
+  display: flex;
+  background-color: #f47b0a;
+  padding: 8px 6px;
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  margin-left: 18px;
+  margin-right: 10px;
+}
+
+.bank__item {
+  display: flex;
+  background-color: #895537;
+  padding: 5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.deliv__item {
+  display: flex;
+  background-color: #ffba33;
+  padding: 6px;
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.form-check-input {
+  margin-top: 7px !important;
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  margin-top: 6px !important;
+  cursor: pointer;
+  color: #362115 !important;
+  background-color: #362115 !important;
+  border-color: #362115 !important;
+}
+
+.form-check-label {
+  display: flex;
+  font-size: 20px;
+}
+
+.pay__confirmation {
+  width: 68%;
+  margin: 40px 120px;
+  background-color: #6a4029 !important;
+  border-color: #6a4029 !important;
+  box-shadow: 0px 10px 20px rgba(137, 85, 55, 0.4);
+  border-radius: 20px !important;
+  padding: 15px !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+}
+
+@media (max-width: 480px) {
+  .order__img {
+    width: 50px;
+    border-radius: 10px;
+  }
+
+  .order__summary {
+    line-height: 4px;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .order__summary--price {
+    font-size: 15px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .order__summary--price--cart {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .order__summary--price--cart--desc {
+    font-size: 15px;
+  }
+
+  .order__summary--price--cart--desc1 {
+    font-size: 20px;
+  }
+
+  .cart__content--left--title {
+    margin-bottom: 50px;
+  }
+
+  .left__title {
+    margin: 40px 20px;
+  }
+
+  .cart__content--left {
+    margin: 20px 20px 50px;
+  }
+
+  .right__title {
+    margin: 1px 20px;
+  }
+
+  .cart__content--right {
+    margin: 1px 20px 30px;
+  }
+
+  .pay__confirmation {
+    margin: 40px 20px;
+    width: 88%;
+  }
+}
